@@ -72,7 +72,7 @@ void clear_color_buffer(uint32_t color) {
 }
 
 void update(void) {
-    // TODO: Update game logic here
+  // TODO: Update game logic here
 }
 
 void process_input(void) {
@@ -89,16 +89,29 @@ void process_input(void) {
   }
 }
 
+void draw_grid(void) {
+  for (int y = 0; y < window_height; y++) {
+    for (int x = 0; x < window_width; x++) {
+      if (x % 10 == 0 || y % 10 == 0) {
+        color_buffer[(y * window_width) + x] = 0xFF333333;
+      }
+    }
+  }
+}
+
 void render_color_buffer(void) {
   SDL_BlitSurface(color_buffer_surface, NULL, screen, NULL);
 }
 
 void render(void) {
-  // Clear the screen with yellow (e.g. 0xFFFFFF00)
-  // Format is AARRGGBB
-  clear_color_buffer(0xFFFFFF00); 
+
+  draw_grid();
   render_color_buffer();
-  
+
+  // Clear the screen with black (e.g. 0xFF000000)
+  // Format is AARRGGBB
+  clear_color_buffer(0xFF000000);
+
   // Flip buffers to display the rendered frame
   SDL_Flip(screen);
 }
