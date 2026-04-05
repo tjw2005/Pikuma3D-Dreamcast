@@ -1,0 +1,11 @@
+--target=sh-elf
+-IC:/DreamSDK/opt/toolchains/dc/kos/include
+-IC:/DreamSDK/opt/toolchains/dc/kos/kernel/arch/dreamcast/include
+-IC:/DreamSDK/opt/toolchains/dc/kos/addons/include
+-IC:/DreamSDK/opt/toolchains/dc/kos-ports/include
+-IC:/DreamSDK/opt/toolchains/dc/sh-elf/sh-elf/include
+-IC:/DreamSDK/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include
+-D_arch_dreamcast
+-D_arch_sub_pristine
+-D__DREAMCAST__
+-std=gnu11

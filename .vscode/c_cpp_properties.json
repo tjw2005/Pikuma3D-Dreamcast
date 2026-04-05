@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Dreamcast",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/DreamSDK/opt/toolchains/dc/kos/include",
+                "C:/DreamSDK/opt/toolchains/dc/kos/kernel/arch/dreamcast/include",
+                "C:/DreamSDK/opt/toolchains/dc/kos/addons/include",
+                "C:/DreamSDK/opt/toolchains/dc/kos-ports/include",
+                "C:/DreamSDK/opt/toolchains/dc/sh-elf/sh-elf/include",
+                "C:/DreamSDK/opt/toolchains/dc/sh-elf/lib/gcc/sh-elf/13.2.0/include"
+            ],
+            "defines": [
+                "_arch_dreamcast",
+                "_arch_sub_pristine",
+                "__DREAMCAST__"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x86"
+        }
+    ],
+    "version": 4
+}

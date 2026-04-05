@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Dreamcast",
+            "type": "process",
+            "command": "C:/DreamSDK/usr/bin/bash.exe",
+            "args": [
+                "-lc",
+                "cd '${workspaceFolder}' && make"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Run on Dreamcast",
+            "type": "shell",
+            "command": "C:/DreamSDK/opt/toolchains/dc/bin/dc-tool-ip.exe -t 192.168.1.214 -x ${workspaceFolderBasename}.elf",
+            "problemMatcher": []
+        }
+    ]
+}

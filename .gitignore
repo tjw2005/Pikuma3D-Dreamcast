@@ -1,0 +1,14 @@
+# Object files and Build Artifacts
+*.o
+*.elf
+*.img
+*.bin
+
+# Output folders
+cd_root/
+obj/
+
+# Old IDE files (just in case)
+*.cbp
+*.depend
+*.layout
