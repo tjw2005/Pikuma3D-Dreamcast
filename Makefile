@@ -7,7 +7,7 @@ TARGET = $(notdir $(CURDIR)).elf
 KOS_ROMDISK_DIR = romdisk
 
 # The list of compiled object files (add more .o files here if you add more .c files)
-OBJS = main.o romdisk.o
+OBJS = main.o display.o romdisk.o
 
 # The default target executed when you just type 'make'
 all: rm-elf $(TARGET)
